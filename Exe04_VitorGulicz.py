@@ -10,11 +10,16 @@
 nome=str(input("Digite o seu nome: "))
 idade=int(input("Digite a sua idade: "))
 genero=str(input("Digite o seu sexo(f - para mulheres | m - para homens): "))
-if "f" in genero.lower() and 21<=idade<=34:
+if "f" in genero.lower():
+ if 21<=idade<=34:
     print("Parabens {}, você foi aceita! - Vitor Gulicz".format(nome))
-elif "m" in genero.lower() and 18<=idade<=39:
-    print("Parabens {}, você foi aceito! - Vitor Gulicz".format(nome))
+ else:
+    print("Você foi negado {}! - Vitor Gulicz".format(nome))
+elif "m" in genero.lower():
+    if 18<=idade<=39:
+        print("Parabens {}, você foi aceito! - Vitor Gulicz".format(nome))
+    else:
+        print("Você foi negado {}! - Vitor Gulicz".format(nome))
+
 else:
-   print("Você foi negado {}! - Vitor Gulicz".format(nome))
-if not "f" in genero.lower() or not "m" in genero.lower():
         print("Sexo invalido - Vitor Gulicz")
