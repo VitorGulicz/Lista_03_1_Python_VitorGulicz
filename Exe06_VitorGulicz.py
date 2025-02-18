@@ -12,4 +12,4 @@ if populaçao>=200000 and votos>populaçaoVotos:
 elif populaçao>=200000 and votos<populaçaoVotos:
     print("Haverá segundo turno - Vitor Gulicz")
 else:
-    print("População menor de 200000 - Vitor Gulicz")
+    print("População menor de 200 mil - Vitor Gulicz")
