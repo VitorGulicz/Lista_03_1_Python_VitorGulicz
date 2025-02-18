@@ -14,12 +14,12 @@ if "f" in genero.lower():
  if 21<=idade<=34:
     print("Parabens {}, você foi aceita! - Vitor Gulicz".format(nome))
  else:
-    print("Você foi negado {}! - Vitor Gulicz".format(nome))
+    print("Você foi negado - Idade Invalida {}! - Vitor Gulicz".format(nome))
 elif "m" in genero.lower():
     if 18<=idade<=39:
         print("Parabens {}, você foi aceito! - Vitor Gulicz".format(nome))
     else:
-        print("Você foi negado {}! - Vitor Gulicz".format(nome))
+        print("Você foi negado Idade Invalida {}! - Vitor Gulicz".format(nome))
 
 else:
         print("Sexo invalido - Vitor Gulicz")
